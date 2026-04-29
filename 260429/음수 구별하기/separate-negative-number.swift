@@ -1,6 +1,6 @@
 import Foundation
 
-guard let input = readLine()
+guard let input = readLine(),
       let N = Int(input)
 else { exit(0) }
 
