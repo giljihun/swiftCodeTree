@@ -5,14 +5,6 @@ let nums = line
     .split(separator: " ")
     .compactMap { Int($0) }
 
-if nums[0] < nums[1] {
-    print(1, terminator: " ")
-} else {
-    print(0, terminator: " ")
-}
+let (a, b) = (nums[0], nums[1])
 
-if nums[0] == nums[1] {
-    print(1, terminator: " ")
-} else {
-    print(0, terminator: " ")
-}
+print(a < b ? 1 : 0, a == b ? 1 : 0)
