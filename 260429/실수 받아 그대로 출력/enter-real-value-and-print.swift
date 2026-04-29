@@ -1,3 +1,5 @@
+import Foundation
+
 guard let input = readLine(),
       let N = Double(input)
 else { fatalError() }
