@@ -1,0 +1,10 @@
+import Foundation
+
+guard let line = readLine() else { exit(0) }
+let nums = line
+    .split(separator: " ")
+    .compactMap { Int($0) }
+    .sorted()
+
+print(nums[1])
+
