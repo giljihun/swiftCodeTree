@@ -1,15 +1,15 @@
 import Foundation
 
-guard let input = readLine(),
-      let N = Int(input) 
+guard let first = readLine(),
+      let N = Int(first),
+      let second = readLine()
 else { exit(0) }
 
-guard let line = readLine() else { exit(0) }
-let nums = line
+let result = second
     .split(separator: " ")
+    .prefix(N)
     .compactMap { Int($0) }
-    .map { $0 * $0 }
+    .map { String($0 * $0) }
+    .joined(separator: " ")
 
-for num in nums {
-    print(num, terminator: " ")
-}
+print(result)
